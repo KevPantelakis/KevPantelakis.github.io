@@ -1,3 +1,8 @@
+/* Some vars */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400italic,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
@@ -30,6 +35,10 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+}
+
+h4.list-element{
+  color: #666666;
 }
 
 .language-button {
@@ -126,7 +135,7 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 60vh;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
@@ -154,4 +163,8 @@ a {
 
 a:hover, a:focus, a:active {
   color: #0a0879;
+}
+
+.quote {
+  font-style: italic;
 }
