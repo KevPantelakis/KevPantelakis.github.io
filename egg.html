@@ -21,7 +21,6 @@
             if(index === 0){
                 image.hidden = false;
                 video.hidden = true;
-                video.stop();
                 document.getElementById("Carte").hidden = true;
                 audio.pause();
                 return;
@@ -58,10 +57,10 @@
             }
             if(index === 9){
                 document.getElementById("Carte").hidden = true;
-                audio.pause();
                 video.hidden = false;
-                video.play();
                 image.hidden = true;
+                audio.pause();
+                video.play();
             }
         }
     }
@@ -70,7 +69,7 @@
 <body>
 <div>
     <img id="img1" src="resources/egg/0.png" onclick="k()"/>
-    <video controls id="vid1" hidden src="resources/egg/v1.mp4" onclick="k()"></video>
+    <video controls id="vid1" hidden src="resources/egg/v1.mp4" onended="k()"></video>
 </div>
 <div>
     <audio controls id="audio" hidden>
