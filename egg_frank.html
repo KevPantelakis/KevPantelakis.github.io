@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+
+</style>
+
+<script>
+    let index = 0;
+    function k(){
+        index = (index + 1) % 10;
+        let image = document.getElementById("img1");
+        let video = document.getElementById("vid1");
+        if(image !== null){
+            image.src = "resources/egg/" + index + '.png';
+            image.size = 'auto';
+            let audio = document.getElementById("audio");
+            if(index === 0){
+                image.hidden = false;
+                video.hidden = true;
+                document.getElementById("Carte").hidden = true;
+                audio.pause();
+                return;
+            }
+            if(index === 1){
+                audio.src = "resources/egg/" + 1 + '.mp3';
+                audio.type = "audio/mpeg";
+                audio.loop = true;
+                audio.load();
+                audio.play();
+                video.load();
+            }
+            if(index === 6){
+                audio.src = "resources/egg/" + 2 + '.mp3';
+                audio.type = "audio/mpeg";
+                audio.loop = false;
+                audio.load();
+                audio.play();
+            }
+            if(index === 7){
+                audio.src = "resources/egg/" + 3 + '.mp3';
+                audio.type = "audio/mpeg";
+                audio.loop = false;
+                audio.load();
+                audio.play();
+            }
+            if(index === 8){
+                document.getElementById("Carte").hidden = false;
+                audio.src = "resources/egg/" + 4 + '.mp3';
+                audio.type = "audio/mpeg";
+                audio.loop = true;
+                audio.load();
+                audio.play();
+            }
+            if(index === 9){
+                document.getElementById("Carte").hidden = true;
+                video.hidden = false;
+                image.hidden = true;
+                audio.pause();
+                video.play();
+            }
+        }
+    }
+</script>
+
+<body>
+<div>
+    <img id="img1" src="resources/egg/0.png" onclick="k()"/>
+    <video controls id="vid1" hidden src="resources/egg/v1.mp4" onended="k()"></video>
+</div>
+<div>
+    <audio controls id="audio" hidden>
+    </audio>
+</div>
+<div id="Carte" hidden>
+    <h1>La vla ta carte de fête Frank!!!</h1>
+    <h2>Bonne fête Minou!<br>
+        - Minou<br></h2>
+    <h2>Bonne fête au plus jeune des vieillards. Ton heure est aussi arrivé.<br>
+        J'espère que tu as bien profité de ces 30 dernières années, car 31 ans signifie:<br>
+        adultes et responsabilités... quoique je penses à mon chum qui est fait sur le même frame que toi pis...<br>
+        En tous cas, l'important c'est de profiter de chaque instant. Fac BONNE FÊTE L'GROS.<br>
+        - Audréanne<br></h2>
+    <h2>Je suis bizarre et heureusement j'ai un ami aussi bizzare que moi!<br>
+        Souvent je me souviens des bon moments et je souris comme une idiote.<br>
+        Merci de me faire avoir l'air stupide au travail 😅 <br>
+        - Marissa<br></h2>
+    <h2>Déjà 31 ans de passé.
+        On a fait des niaiseries en 31 ans haha, mais je ne referais pas c'est année la autrement.<br>
+        31 une fois merci de m'avoir accepté dans ta vie et d'avoir été la quand j'en ai eu de besoin en souhaitant au moins un autre 31 a te côtoyer.<br>
+        Je te souhaite un joyeux anniversaire et ptête un cube draft si t'es gentil.<br>
+        - Yan<br></h2>
+    <h2>Bonne fête mon Frank. A toi, pour toujours. Stay a MAN !!!<br>
+        - Rik<br></h2>
+    <h2>Good job big boy, continue de même, euh... ta blonde est cool. Bonne fete sti<br>
+        De koi du genre, tout ce que j'avais a lui dire je l'ai faite a la mauvaise fête 😛 😞, au moins c'était drôle!<br>
+        - JP<br></h2>
+    <h2>On ira s'becotter l'lunch dans le lave auto un mommentdnez.<br>
+        Aussi fuck les chinese topmans sont toute pareile les sacrament!<br>
+        Bonne fête! Very Much Love <3<br>
+        - Kev</h2>
+</div>
+</body>
+</html>
