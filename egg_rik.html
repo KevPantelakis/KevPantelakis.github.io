@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style type="text/css">
+
+</style>
+
+<script>
+    function k(){
+        let element = document.getElementById("img1");
+        if(element !== null){
+            element.src = "resources/egg/skishma.jpg";
+            element.id="img2";
+            document.getElementById("audio").load();
+            document.getElementById("audio").play();
+        }
+        else{
+            let element = document.getElementById("img2");
+            element.src = "resources/egg/bagmfb.png";
+            element.id="img1";
+            document.getElementById("audio").pause();
+        }
+
+    }
+
+</script>
+
 <body>
-<a class="language-button" href="index.html">Go back, now!</a>
 <div>
-    <h1>De toute la gang, BONNE FÊTE!</h1>
-    <img src="resources/egg/skishma.jpg" style="alignment: center">
-    <audio controls autoplay loop>
+    <h1>Sauce twe l'cap!</h1>
+    <img id="img1" src="resources/egg/bagmfb.png" onclick="k()"/>
+
+    <audio controls hidden id="audio">
         <source src="resources/egg/skishimiguy.ogg" type="audio/ogg">
         <source src="resources/egg/skishimiguy.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -17,4 +41,4 @@
 </div>
 
 </body>
-</html>
+</html> 
