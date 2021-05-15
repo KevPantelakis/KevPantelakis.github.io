@@ -63,7 +63,7 @@ h4.list-element{
 }
 
 .list-social-icons a:hover {
-  color: #037583;
+  color: #054149 !important;
 }
 
 .list-social-icons a .fa-lg {
@@ -100,8 +100,8 @@ h4.list-element{
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 12rem;
+    max-height: 12rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
@@ -125,8 +125,9 @@ h4.list-element{
 
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  margin: 0 !important;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -150,15 +151,19 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #037583 !important;
+  background-color: #343a40 !important;
 }
 
 .text-primary {
+  color: #343a40 !important;
+}
+
+.text-secondary {
   color: #037583 !important;
 }
 
 a {
-  color: #037583;
+  color: #037583 ;
 }
 
 a:hover, a:focus, a:active {
@@ -167,4 +172,20 @@ a:hover, a:focus, a:active {
 
 .quote {
   font-style: italic;
+}
+
+.list-social-icons a {
+  color: #037583;
+}
+
+.list-social-icons a:hover {
+  color: #054149 !important;
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+
+.def-job {
+  color: #343a40 !important;
 }
