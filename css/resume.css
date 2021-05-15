@@ -58,18 +58,6 @@ h4.list-element{
   font-size: 1.35rem;
 }
 
-.list-social-icons a {
-  color: #495057;
-}
-
-.list-social-icons a:hover {
-  color: #054149 !important;
-}
-
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
-}
-
 .list-icons {
   font-size: 3rem;
 }
@@ -174,6 +162,10 @@ a:hover, a:focus, a:active {
   font-style: italic;
 }
 
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+
 .list-social-icons a {
   color: #037583;
 }
@@ -188,4 +180,38 @@ a:hover, a:focus, a:active {
 
 .def-job {
   color: #343a40 !important;
+}
+
+.img-food {
+  max-width: 12rem;
+  max-height: 12rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.custom-form{
+  max-width: 20rem;
+  max-height: 12rem;
+}
+
+.custom-area{
+  min-height: 15rem;
+  max-width: 30rem;
+}
+
+.cv-button {
+  background-color: #037583 !important;
+  margin-bottom: 1rem;
+}
+
+.cv-button:hover{
+  background-color: #054149 !important;
+}
+
+.custom-button{
+  background-color: #037583 !important;
+  margin-top: 1rem;
+}
+
+.custom-button:hover{
+  background-color: #054149 !important;
 }

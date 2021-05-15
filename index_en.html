@@ -46,7 +46,7 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#implication">Implication</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="resources/cv_en.pdf">CV</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cvmessage">Contact Info</a></li>
             <ul class="list-inline list-social-icons mb-0">
                 <li class="list-inline-item">
                     <a href="https://linkedin.com/in/kevinpantelakis">
@@ -76,7 +76,7 @@
                 <span class="text-secondary">Pantelakis</span>
             </h1>
             <div class="subheading mb-5">
-                <a href="mailto:name@email.com">kev.pantelakis@gmail.com</a>
+                <a class="js-scroll-trigger" href="#cvmessage">Contact me</a>
             </div>
             <p class="mb-2">
                 I currently have close to two years experience as a Programmer Analyst at an Insurance Broker company. I had the opportunity to work on various fields of the insurance industry. I worked on
@@ -270,7 +270,7 @@
                         <li><p>Animating the meetings of the executive committee.</p></li>
                         <li><p>Having basic knowledge of every part of the organization.</p></li>
                         <li><p>Making sure everyone respects the deadlines and does their jobs.</p></li>
-                        <li><p>Managing volunteers.</p>/li>
+                        <li><p>Managing volunteers.</p></li>
                         <li><p>Integrating new recruits.</p></li>
                     </ul>
                 </div>
@@ -291,7 +291,56 @@
             </p>
             <p class="mb-0">
                 When I'm not coding, I play games and watch movies and series. I also enjoy cooking for my family and friends!
+                <br><br>Here are some of my tastiest plates!
             </p>
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="img/club.jpg">
+                        <span>
+                            <img class="img-fluid img-food rounded mb-2" src="img/club.jpg">
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="img/poutine.jpg">
+                        <span>
+                            <img class="img-fluid img-food rounded mb-2" src="img/poutine.jpg">
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="img/pizza.jpg">
+                        <span>
+                            <img class="img-fluid img-food rounded mb-2" src="img/pizza.jpg">
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="img/nachos.jpg">
+                        <span>
+                            <img class="img-fluid img-food rounded mb-2" src="img/nachos.jpg">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5" id="cvmessage">
+        <div>
+            <h2 class="mb-5">Contact Info</h2>
+            <h3 class="mb-2">Download my CV</h3>
+            <a type="button" class="btn btn-secondary cv-button" href="resources/cv_en.pdf">English Version</a>
+            <a type="button" class="btn btn-secondary cv-button" href="resources/cv_fr.pdf">Version Française</a>
+            <h3 class="mb-2">Contact me directly</h3>
+            <form id="my-form" action="https://formspree.io/f/xdoyezbj" method="POST" class="form-group">
+                <label>Your email:</label>
+                <input type="email" name="email" class="form-control custom-form"/>
+                <label>Message:</label>
+                <textarea class="form-control custom-area" type="text" name="message"></textarea>
+                <button class="btn btn-secondary custom-button" id="my-form-button">Send</button>
+                <p id="my-form-status"></p>
+            </form>
         </div>
     </section>
 </div>
@@ -305,6 +354,7 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/resume.min.js"></script>
+<script src="js/mail.js"></script>
 
 </body>
 
