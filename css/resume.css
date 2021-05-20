@@ -155,7 +155,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #0a0879;
+  color: #0a0879; 
 }
 
 .quote {
@@ -188,6 +188,12 @@ a:hover, a:focus, a:active {
   border: 0.5rem solid rgba(255, 255, 255, 0.2) !important;
 }
 
+.img-meme {
+  max-width: 16rem;
+  max-height: 16rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2) !important;
+}
+
 .custom-form{
   max-width: 20rem;
   max-height: 12rem;
@@ -214,4 +220,12 @@ a:hover, a:focus, a:active {
 
 .custom-button:hover{
   background-color: #054149 !important;
+}
+
+a.thick{
+  font-weight: bold;
+}
+
+a.underline{
+  text-decoration: underline !important;
 }
