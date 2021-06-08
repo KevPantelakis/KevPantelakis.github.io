@@ -229,3 +229,7 @@ a.thick{
 a.underline{
   text-decoration: underline !important;
 }
+
+.li-margin{
+  margin-top: 1rem;
+}
